@@ -1,5 +1,6 @@
 <script>
 	import CharMultiplierUi from '$lib/tools/charMultiplier/ui.svelte';
+	import AsciiMapUi from '$lib/tools/asciiMap/ui.svelte';
 </script>
 
 <div class="flex flex-col">
@@ -14,4 +15,5 @@
 	</div>
 
 	<CharMultiplierUi />
+	<AsciiMapUi />
 </div>

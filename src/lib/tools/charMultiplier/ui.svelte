@@ -43,7 +43,7 @@
 			onclick={() => {
 				copied = true;
 				navigator.clipboard.writeText(characterToMultiply.repeat(timesToMultiply));
-				setTimeout(() => (copied = false), 1000);
+				setTimeout(() => (copied = false), 500);
 			}}
 		>
 			{copied ? 'copied!' : 'copy'}
