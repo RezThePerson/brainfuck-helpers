@@ -4,7 +4,7 @@
 </script>
 
 <div class="m-3 flex flex-col gap-2 border-3 border-neutral-400 p-3">
-	<h1 class="text-4xl" id="ascii-mapr">ascii map</h1>
+	<h1 class="text-4xl" id="ascii-map">ascii map</h1>
 
 	<div>
 		<div class="flex w-full gap-4">
@@ -19,7 +19,7 @@
 			{#each map as cell (cell.dec)}
 				<Cell
 					decimal={cell.dec}
-					hex={'0x' + cell.dec.toString(16).toUpperCase()}
+					hex={'0x' + cell.dec.toString(16).padStart(2, '0').toUpperCase()}
 					char={cell.char}
 					desc={cell.desc}
 				/>
